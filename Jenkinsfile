@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git credentialsId: 'hanstabotabo-opswerks', url: 'git@github.com:hanstabotabo-opswerks/node-webapp.git'
+                git credentialsId: 'hanstabotabo-opswerks', url: 'https://github.com/hanstabotabo-opswerks/node-webapp.git'
             }
         }
         stage('Build') {
